@@ -1,0 +1,47 @@
+<html lang="es" >
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Angular Material style sheet -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+		<link rel="stylesheet" href="/dist/style.css">
+	</head>
+	<body ng-app="TrafficFourAm" ng-cloak>
+		<md-toolbar ng-controller="ToolBaar" ng-cloak>
+			<div layout="row">
+				<div flex="20" layout-align="left center" layout="row">
+					<img src="/img/4am-logo.png" alt="4am Saatchi" class="img-logo">
+				</div>
+				<div flex="60" layout-align="center center" layout="row">
+				<md-button class="md-primary" style="color: #fff !important;">CLientes</md-button>
+				<md-button ng-disabled="true" class="md-primary">Proyecto</md-button>
+				<md-button ng-disabled="true" class="md-primary">Grupo</md-button>
+				<md-button ng-disabled="true" class="md-primary">Persona</md-button>
+				</div>
+				<div flex="20" layout-align="left center" layout="row">
+					<md-list-item class="md-3-line md-no-proxy ng-scope _md" role="listitem" style="">
+			        <img ng-src="https://material.angularjs.org/latest/img/list/60.jpeg" class="md-avatar" alt="Min Li Chan" src="img/list/60.jpeg?0">
+			        <div class="md-list-item-text">
+			          <h3 class="ng-binding">Lorem ipsum</h3>
+			          <h4 class="ng-binding">Consectetur</h4>
+			        </div>
+			        <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope"></md-divider><!-- end ngIf: !$last -->
+			      <div class="md-secondary-container"></div></md-list-item>
+				</div>
+			</div>
+		</md-toolbar>
+		
+
+
+		<!-- Angular Material requires Angular.js Libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+
+		<!-- Angular Material Library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+
+		<!-- Your application bootstrap  -->
+		<script src="/dist/index.js"></script>
+	</body>
+</html>
